@@ -10,61 +10,76 @@
 html {
   font-size: 62.5%;
 }
+
 body {
   font-family: Inter, Arial, Helvetica, sans-serif;
   font-size: 2.4rem;
   color: var(--color-body);
 }
+
 h1,
 h2,
 h3 {
   color: var(--color-headings);
   margin-bottom: 1rem;
 }
+
 h1 {
   font-size: 7rem;
 }
+
 h2 {
   font-size: 4rem;
 }
+
 h3 {
   font-size: 3rem;
 }
+
 p {
   margin-top: 0;
 }
+
 @media screen and (min-width: 1024px) {
   body {
     font-size: 1.8rem;
   }
+
   h1 {
     font-size: 8rem;
   }
+
   h2 {
     font-size: 4rem;
   }
+
   h3 {
     font-size: 2.4rem;
   }
 }
+
 /* Links */
 a {
   text-decoration: none;
 }
+
 .link-arrow {
   color: var(--color-accent);
   text-transform: uppercase;
   font-size: 2rem;
   font-weight: bold;
 }
+
 .link-arrow::after {
   content: "-->";
   margin-left: 5px;
   transition: margin 0.15s;
 }
+
 .link-arrow:hover:after {
   margin-left: 10px;
 }
+
 @media screen and (min-width: 1024px) {
   .link-arrow {
     font-size: 1.5rem;
@@ -84,10 +99,12 @@ a {
   background-color: var(--color-primary);
   color: #fff;
 }
+
 .badge--secondary {
   background-color: var(--color-secondary);
   color: #fff;
 }
+
 .badge--small {
   font-size: 1.6rem;
 }
@@ -96,10 +113,12 @@ a {
   .badge {
     font-size: 1.5rem;
   }
+
   .badge--small {
     font-size: 1.2rem;
   }
 }
+
 /* Lists */
 .list {
   list-style: none;
@@ -126,4 +145,24 @@ a {
   .list--tick .list__item {
     padding-left: 0;
   }
+}
+
+/* Icons */
+.icon {
+  width: 40px;
+  height: 40px;
+}
+
+.icon--primary {
+  fill: var(--color-primary);
+}
+
+.icon-container {
+  background-color: #f3f9fa;
+  width: 64px;
+  height: 64px;
+  border-radius: 100%;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
 }
