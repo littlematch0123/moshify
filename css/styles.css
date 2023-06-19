@@ -762,3 +762,27 @@ a {
     grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
   }
 }
+
+/* Plans Block */
+.block-plans.grid {
+  align-items: center;
+  gap: 8rem 4rem;
+}
+
+.block-plans .card {
+  max-width: 500px;
+  margin: 0 auto;
+  transition: transform .2s ease-out;
+}
+
+.block-plans .card:hover {
+  transform: scale(1.05);
+}
+
+.block-plans .card--primary {
+  transform: scale(1.05);
+}
+
+.block-plans .card--primary:hover {
+  transform: scale(1.1);
+}
