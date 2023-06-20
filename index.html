@@ -10,6 +10,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="css/normalize.css" />
   <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="css/aos.css">
 </head>
 
 <body>
@@ -28,14 +29,18 @@
   <section class="hero block block--dark block--skewed-left">
     <div class="container grid grid--1x2">
       <header class="block__header hero__content">
-        <h1 class="block__heading">Cloud Hosting for Pros</h1>
+        <h1 class="block__heading" data-aos="zoom-in-up">Cloud Hosting for Pros</h1>
         <p class="hero__tagline">Deploy your websites in less than 60 seconds</p>
         <a href="#" class="btn btn--accent btn--stretched">Get Started</a>
       </header>
-      <img class="hero__image" src="images/banner.png" alt="cloud hosting">
+      <picture data-aos="zoom-in">
+        <source type="image/webp" srcset="images/banner.webp 1x, images/banner@2x.webp 2x">
+        <source type="image/png" srcset="images/banner.png 1x, images/banner@2x.png 2x">
+        <img src="images/banner.png" alt="cloud hosting">
+      </picture>
     </div>
   </section>
-  <section class="block container block-domain">
+  <section data-aos="zoom-in-up" class="block container block-domain">
     <header class="block__header">
       <h2>Starting at $10 per month</h2>
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, exercitationem?</p>
@@ -58,7 +63,7 @@
       <li class="list__item">.xyz $10</li>
     </ul>
   </section>
-  <section class="container grid grid--1x3 block block-plans">
+  <section data-aos="fade-up" class="container grid grid--1x3 block block-plans">
     <div class="plan">
       <div class="card card--secondary">
         <header class="card__header">
@@ -130,7 +135,7 @@
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, voluptatem.</p>
     </header>
     <article class="grid grid--1x2">
-      <div class="block-feature__content">
+      <div data-aos="fade-up" class="block-feature__content">
         <span class="icon-container">
           <svg class="icon icon--primary">
             <use xlink:href="images/sprite.svg#easy"></use>
@@ -141,14 +146,14 @@
           excepturi officia dolores!</p>
         <a href="#" class="link-arrow">Learn More</a>
       </div>
-      <picture class="block-feature__picture">
+      <picture data-aos="zoom-in-up" class="block-feature__picture">
         <source type="image/webp" srcset="images/easy.webp 1x, images/easy@2x.webp 2x">
         <source type="image/png" srcset="images/easy.png 1x, images/easy@2x.png 2x">
         <img src="images/easy.png" alt="cloud hosting">
       </picture>
     </article>
     <article class="grid grid--1x2">
-      <div class="block-feature__content">
+      <div data-aos="fade-up" class="block-feature__content">
         <span class="icon-container">
           <svg class="icon icon--primary">
             <use xlink:href="images/sprite.svg#computer"></use>
@@ -159,14 +164,14 @@
           excepturi officia dolores!</p>
         <a href="#" class="link-arrow">Learn More</a>
       </div>
-      <picture class="block-feature__picture">
+      <picture data-aos="zoom-in-up" class="block-feature__picture">
         <source type="image/webp" srcset="images/fast.webp 1x, images/fast@2x.webp 2x">
         <source type="image/png" srcset="images/fast.png 1x, images/fast@2x.png 2x">
         <img src="images/fast.png" alt="cloud hosting">
       </picture>
     </article>
     <article class="grid grid--1x2">
-      <div class="block-feature__content">
+      <div data-aos="fade-up" class="block-feature__content">
         <span class="icon-container">
           <svg class="icon icon--primary">
             <use xlink:href="images/sprite.svg#wordpress"></use>
@@ -177,14 +182,14 @@
           excepturi officia dolores!</p>
         <a href="#" class="link-arrow">Learn More</a>
       </div>
-      <picture class="block-feature__picture">
+      <picture data-aos="zoom-in-up" class="block-feature__picture">
         <source type="image/webp" srcset="images/wordpress.webp 1x, images/wordpress@2x.webp 2x">
         <source type="image/png" srcset="images/wordpress.png 1x, images/wordpress@2x.png 2x">
         <img src="images/wordpress.png" alt="cloud hosting">
       </picture>
     </article>
     <article class="grid grid--1x2">
-      <div class="block-feature__content">
+      <div data-aos="fade-up" class="block-feature__content">
         <span class="icon-container">
           <svg class="icon icon--primary">
             <use xlink:href="images/sprite.svg#clock"></use>
@@ -195,7 +200,7 @@
           excepturi officia dolores!</p>
         <a href="#" class="link-arrow">Learn More</a>
       </div>
-      <picture class="block-feature__picture">
+      <picture data-aos="zoom-in-up" class="block-feature__picture">
         <source type="image/webp" srcset="images/support.webp 1x, images/support@2x.webp 2x">
         <source type="image/png" srcset="images/support.png 1x, images/support@2x.png 2x">
         <img src="images/support.png" alt="cloud hosting">
@@ -207,12 +212,12 @@
       <h2>User-Friendly Control Panel</h2>
     </header>
     <div class="container grid grid--1x2">
-      <picture class="block-showcase__picture">
+      <picture data-aos="fade-right" class="block-showcase__picture">
         <source type="image/webp" srcset="images/ipad.webp 1x, images/ipad@2x.webp 2x">
         <source type="image/png" srcset="images/ipad.png 1x, images/ipad@2x.png 2x">
         <img class="block-showcase__image" src="images/ipad.png" alt="cloud hosting">
       </picture>
-      <ul class="list block-showcase__content">
+      <ul data-aos="fade-up" class="list block-showcase__content">
         <li class="media">
           <div class="media__image">
             <svg class="icon icon--primary">
@@ -254,7 +259,7 @@
       </ul>
     </div>
   </section>
-  <section class="block">
+  <section data-aos="zoom-in" class="block">
     <header class="block__header">
       <h2>What our Customers are Saying</h2>
       <p>Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan.</p>
@@ -378,6 +383,10 @@
     </div>
   </footer>
   <script src="js/main.js"></script>
+  <script src="js/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
 
 </html>
