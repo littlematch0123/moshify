@@ -786,3 +786,24 @@ a {
 .block-plans .card--primary:hover {
   transform: scale(1.1);
 }
+
+/* Features Blocks */
+.block-feature .grid {
+  align-items: center;
+  gap: 8rem 4rem;
+  margin: 10rem 0;
+}
+
+.block-feature__heading {
+  margin-top: 1rem;
+}
+
+.block-feature__picture {
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 768px) {
+  .grid--1x2:nth-of-type(even) .block-feature__content {
+    order: 2;
+  }
+}
